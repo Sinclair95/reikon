@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=REIKON
+Description=REIKON BGRT Boot Theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/reikon
+ScriptFile=/usr/share/plymouth/themes/reikon/reikon.script
