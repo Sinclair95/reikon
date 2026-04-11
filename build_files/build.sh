@@ -22,3 +22,10 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# Install REIKON Plymouth theme
+mkdir -p /usr/share/plymouth/themes/reikon
+cp -r /ctx/plymouth/themes/reikon/* /usr/share/plymouth/themes/reikon/
+
+# Set it as default
+plymouth-set-default-theme reikon -R
