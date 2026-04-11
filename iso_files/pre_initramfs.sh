@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -eoux pipefail
 
-dnf5 install -y plymouth-plugin-script
-
-mkdir -p /usr/share/plymouth/themes/reikon
-cp -r /github/workspace/build_files/plymouth/themes/reikon/* /usr/share/plymouth/themes/reikon/
+# REIKON theme is already inside the image from build.sh
+# We only need to set it before Titanoboa generates initramfs
 
 plymouth-set-default-theme reikon
